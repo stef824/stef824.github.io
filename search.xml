@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[GitHub Pages+Hexo搭建个人博客完全教程]]></title>
+    <url>%2F2018%2F10%2F11%2FGitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%8C%E5%85%A8%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[利用GitHub Pages搭建个人博客，主要分为三个步骤： 创建个人GitHub Pages，即创建\&lt;username>.github.io工程 安装配置静态博客生成系统 申请和绑定个人域名 GitHub Pages创建个人GitHub Pages和创建普通repository基本一样，关键点是工程名必须是\&lt;username>.github.io HexoGitHub Pages默认使用Jekyll静态博客生成系统。经过简单的试用，笔者发现Jekyll的几个特点： 依赖Ruby环境，依赖项很多，安装不方便； 不提供中文开发文档，对中文用户不友好； markdown支持的是krandowm格式，存在潜在的兼容性问题。 经过搜索对比，笔者最后选择了Hexo，完美解决上述问题。 Hexo安装参照Hexo文档-&gt;安装 建站参照Hexo文档-&gt;建站 配置参照Hexo文档-&gt;配置 yml配置语法要点： 123456# :表示引用，如下所示，:title表示使用文章的文件名new_post_name: :title.md# 单项配置包含多个可用值，每个可用值使用- 开头，并保持独立行key_words: - Java - Python 常用配置 命令 参照Hexo文档-&gt;命令 主题Hexo提供丰富的主题支持，可以在Hexo主题中选择自己喜欢的主题，下载后放置在\&lt;blog_folder>\themes文件夹下，同时修改站点_config.yml中的theme为主题名。 笔者使用的是被广泛使用的极简主题NexT，GitHub Repository. 下面NexT主题的配置]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F10%2F10%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
